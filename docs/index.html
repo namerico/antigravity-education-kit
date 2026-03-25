@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antigravity Education Kit — Framework de IA para Educação</title>
+    <meta name="description" content="Framework modular de IA especializado em educação. Agentes inteligentes, skills pedagógicas e workflows para revolucionar o ensino-aprendizagem.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <span class="logo-icon">🚀</span>
+                <span class="logo-text">Antigravity<span class="logo-accent">Edu</span></span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#agents">Agentes</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#workflows">Workflows</a></li>
+                <li><a href="#how-it-works">Como Funciona</a></li>
+            </ul>
+            <a href="https://github.com/namerico/antigravity-education-kit" target="_blank" class="btn btn-outline btn-sm">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+            </a>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="floating-orb orb-1"></div>
+            <div class="floating-orb orb-2"></div>
+            <div class="floating-orb orb-3"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-badge">🧠 Framework de IA Educacional</div>
+            <h1 class="hero-title">
+                Antigravity
+                <span class="gradient-text">Education Kit</span>
+            </h1>
+            <p class="hero-subtitle">
+                Um framework modular de agentes de IA especializados em educação. 
+                Tutores personalizados, criadores de conteúdo e avaliadores inteligentes 
+                trabalhando juntos para revolucionar o ensino-aprendizagem.
+            </p>
+            <div class="hero-actions">
+                <a href="https://github.com/namerico/antigravity-education-kit" target="_blank" class="btn btn-primary btn-lg">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    Ver no GitHub
+                </a>
+                <a href="#about" class="btn btn-ghost btn-lg">
+                    Saiba Mais ↓
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="5">0</span>
+                    <span class="stat-label">Agentes IA</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="27">0</span>
+                    <span class="stat-label">Skills</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="4">0</span>
+                    <span class="stat-label">Workflows</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="6">0</span>
+                    <span class="stat-label">Scripts</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Sobre o Projeto</span>
+                <h2 class="section-title">O que é o Antigravity Education Kit?</h2>
+                <p class="section-subtitle">Uma arquitetura modular que organiza a inteligência artificial em três componentes — Agentes, Skills e Workflows — para criar assistentes educacionais poderosos e personalizáveis.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>Agentes Especializados</h3>
+                    <p>Personas de IA com funções específicas — tutores, avaliadores e criadores de conteúdo que colaboram entre si.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🧩</div>
+                    <h3>Skills Modulares</h3>
+                    <p>Módulos de conhecimento que os agentes "equipam" conforme a necessidade — tanto pedagógicos quanto de domínio.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Workflows Inteligentes</h3>
+                    <p>Procedimentos que coordenam múltiplos agentes para tarefas complexas como criar planos de estudo completos.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Personalização Total</h3>
+                    <p>Separação entre "como ensinar" e "o que ensinar" permite adaptação fina às necessidades de cada aluno.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">♿</div>
+                    <h3>Inclusão e Acessibilidade</h3>
+                    <p>Agente especialista em educação especial com suporte a TEA, TDAH, Libras e adaptações pedagógicas.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📐</div>
+                    <h3>Alinhado à BNCC</h3>
+                    <p>Skills de domínio organizadas conforme a Base Nacional Comum Curricular, da Educação Infantil ao Ensino Superior.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agents Section -->
+    <section class="section section-dark" id="agents">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Agentes de IA</span>
+                <h2 class="section-title">Conheça os Agentes</h2>
+                <p class="section-subtitle">Cada agente é um especialista com personalidade, missão e habilidades próprias.</p>
+            </div>
+            <div class="agents-grid">
+                <div class="agent-card">
+                    <div class="agent-avatar">🎯</div>
+                    <div class="agent-info">
+                        <h3>Orquestrador Educacional</h3>
+                        <span class="agent-role">Coordenador</span>
+                        <p>Recebe demandas complexas e delega tarefas para os agentes mais adequados. É o ponto central de interação.</p>
+                        <div class="agent-skills-tags">
+                            <span class="tag">Coordenação</span>
+                            <span class="tag">Planejamento</span>
+                            <span class="tag">Delegação</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-avatar">👨‍🏫</div>
+                    <div class="agent-info">
+                        <h3>Tutor Personalizado</h3>
+                        <span class="agent-role">Educador</span>
+                        <p>Interage diretamente com o aluno, adaptando explicações ao seu nível de conhecimento e estilo de aprendizagem.</p>
+                        <div class="agent-skills-tags">
+                            <span class="tag">Pedagogia</span>
+                            <span class="tag">Comunicação</span>
+                            <span class="tag">Motivação</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-avatar">✍️</div>
+                    <div class="agent-info">
+                        <h3>Criador de Conteúdo Didático</h3>
+                        <span class="agent-role">Produtor</span>
+                        <p>Cria exercícios, quizzes, resumos, planos de aula e materiais multimídia de alta qualidade.</p>
+                        <div class="agent-skills-tags">
+                            <span class="tag">Design Instrucional</span>
+                            <span class="tag">Multimídia</span>
+                            <span class="tag">Curadoria</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-avatar">📊</div>
+                    <div class="agent-info">
+                        <h3>Avaliador de Aprendizagem</h3>
+                        <span class="agent-role">Avaliador</span>
+                        <p>Avalia o progresso do aluno com feedback construtivo e formativo, sem fornecer respostas prontas.</p>
+                        <div class="agent-skills-tags">
+                            <span class="tag">Avaliação</span>
+                            <span class="tag">Feedback</span>
+                            <span class="tag">Diagnóstico</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="agent-card agent-card-highlight">
+                    <div class="agent-avatar">♿</div>
+                    <div class="agent-info">
+                        <h3>Especialista em Educação Especial</h3>
+                        <span class="agent-role">Inclusão</span>
+                        <p>Adapta conteúdos para alunos com TEA, TDAH, dificuldades motoras e outras necessidades especiais, incluindo Libras.</p>
+                        <div class="agent-skills-tags">
+                            <span class="tag">TEA</span>
+                            <span class="tag">TDAH</span>
+                            <span class="tag">Libras</span>
+                            <span class="tag">Acessibilidade</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Módulos de Conhecimento</span>
+                <h2 class="section-title">Skills Disponíveis</h2>
+                <p class="section-subtitle">Os agentes "equipam" skills conforme a necessidade. Separadas em <strong>Como Ensinar</strong> e <strong>O Que Ensinar</strong>.</p>
+            </div>
+            
+            <div class="skills-tabs">
+                <button class="tab-btn active" data-tab="pedagogicas">📚 Pedagógicas</button>
+                <button class="tab-btn" data-tab="dominios">🎓 Domínios</button>
+                <button class="tab-btn" data-tab="superior">🏛️ Ensino Superior</button>
+            </div>
+
+            <div class="tab-content active" id="tab-pedagogicas">
+                <div class="skills-grid">
+                    <div class="skill-card"><div class="skill-icon">📘</div><h4>Pedagogia</h4><p>Base pedagógica universal</p></div>
+                    <div class="skill-card"><div class="skill-icon">🎨</div><h4>Design Instrucional</h4><p>Estrutura de cursos e aulas</p></div>
+                    <div class="skill-card"><div class="skill-icon">📝</div><h4>Avaliação Formativa</h4><p>Avaliação durante o processo</p></div>
+                    <div class="skill-card"><div class="skill-icon">✅</div><h4>Avaliação de Conhecimento</h4><p>Avaliação de resultados</p></div>
+                    <div class="skill-card"><div class="skill-icon">💬</div><h4>Comunicação Eficaz</h4><p>Clareza e engajamento</p></div>
+                    <div class="skill-card"><div class="skill-icon">🗣️</div><h4>Adaptação Linguística</h4><p>Adaptar ao nível do aluno</p></div>
+                    <div class="skill-card"><div class="skill-icon">🔥</div><h4>Motivação do Aluno</h4><p>Engajamento e motivação</p></div>
+                    <div class="skill-card"><div class="skill-icon">📂</div><h4>Curadoria de Conteúdo</h4><p>Seleção e organização de recursos</p></div>
+                    <div class="skill-card"><div class="skill-icon">🔬</div><h4>Pesquisa Acadêmica</h4><p>Pesquisa científica (Google Acadêmico)</p></div>
+                    <div class="skill-card"><div class="skill-icon">🎬</div><h4>Produção Multimídia</h4><p>Criação de materiais ricos</p></div>
+                    <div class="skill-card"><div class="skill-icon">🔍</div><h4>Diagnóstico de Dificuldades</h4><p>Identificação de lacunas</p></div>
+                    <div class="skill-card"><div class="skill-icon">💡</div><h4>Feedback Construtivo</h4><p>Retorno orientado à melhoria</p></div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab-dominios">
+                <div class="skills-grid">
+                    <div class="skill-card"><div class="skill-icon">🧒</div><h4>Educação Infantil</h4><p>Creche, pré-escola e campos de experiência</p></div>
+                    <div class="skill-card"><div class="skill-icon">♿</div><h4>Educação Especial e Libras</h4><p>Acessibilidade, TEA, TDAH</p></div>
+                    <div class="skill-card"><div class="skill-icon">🔢</div><h4>Matemática Fundamental</h4><p>Aritmética, álgebra, geometria</p></div>
+                    <div class="skill-card"><div class="skill-icon">📖</div><h4>Português e Linguagens</h4><p>Língua Portuguesa e literatura</p></div>
+                    <div class="skill-card"><div class="skill-icon">🧪</div><h4>Ciências da Natureza</h4><p>Ciências, Física, Química, Biologia</p></div>
+                    <div class="skill-card"><div class="skill-icon">🌍</div><h4>Ciências Humanas</h4><p>História, Geografia</p></div>
+                    <div class="skill-card"><div class="skill-icon">🎭</div><h4>Artes</h4><p>Educação Artística</p></div>
+                    <div class="skill-card"><div class="skill-icon">⚽</div><h4>Educação Física</h4><p>Cultura corporal, esportes, saúde</p></div>
+                    <div class="skill-card"><div class="skill-icon">🇬🇧</div><h4>Inglês</h4><p>Língua Estrangeira</p></div>
+                    <div class="skill-card"><div class="skill-icon">💻</div><h4>Tecnologia e Programação</h4><p>Computação e pensamento computacional</p></div>
+                    <div class="skill-card"><div class="skill-icon">🎓</div><h4>Ensino Médio Avançado</h4><p>ENEM e vestibulares</p></div>
+                    <div class="skill-card"><div class="skill-icon">🤔</div><h4>Filosofia e Sociologia</h4><p>Ciências sociais e argumentação</p></div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab-superior">
+                <div class="skills-grid">
+                    <div class="skill-card skill-card-wide"><div class="skill-icon">🐍</div><h4>ADS & Engenharia de Software em Python</h4><p>Análise e Desenvolvimento de Sistemas e Engenharia de Software com Python para nível superior. Inclui estruturas de dados, POO, padrões de projeto e boas práticas.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflows Section -->
+    <section class="section section-dark" id="workflows">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Automação Educacional</span>
+                <h2 class="section-title">Workflows</h2>
+                <p class="section-subtitle">Processos passo a passo que coordenam múltiplos agentes para tarefas complexas.</p>
+            </div>
+            <div class="workflows-grid">
+                <div class="workflow-card">
+                    <div class="workflow-number">01</div>
+                    <h3>Plano de Estudo Personalizado</h3>
+                    <p>Cria um plano de estudos completo e personalizado considerando o nível do aluno, objetivos e tempo disponível.</p>
+                    <div class="workflow-agents">
+                        <span>🎯 Orquestrador</span>
+                        <span>→</span>
+                        <span>👨‍🏫 Tutor</span>
+                        <span>→</span>
+                        <span>📊 Avaliador</span>
+                    </div>
+                    <code class="workflow-cmd">/plano-de-estudo</code>
+                </div>
+                <div class="workflow-card">
+                    <div class="workflow-number">02</div>
+                    <h3>Criação de Material Didático</h3>
+                    <p>Produz material didático completo com exercícios, exemplos práticos e avaliações integradas.</p>
+                    <div class="workflow-agents">
+                        <span>🎯 Orquestrador</span>
+                        <span>→</span>
+                        <span>✍️ Criador</span>
+                        <span>→</span>
+                        <span>📊 Avaliador</span>
+                    </div>
+                    <code class="workflow-cmd">/criar-material</code>
+                </div>
+                <div class="workflow-card">
+                    <div class="workflow-number">03</div>
+                    <h3>Diagnóstico e Recuperação</h3>
+                    <p>Diagnostica dificuldades de aprendizagem e cria planos de recuperação personalizados.</p>
+                    <div class="workflow-agents">
+                        <span>📊 Avaliador</span>
+                        <span>→</span>
+                        <span>👨‍🏫 Tutor</span>
+                        <span>→</span>
+                        <span>✍️ Criador</span>
+                    </div>
+                    <code class="workflow-cmd">/diagnostico</code>
+                </div>
+                <div class="workflow-card">
+                    <div class="workflow-number">04</div>
+                    <h3>Adaptação de Material Inclusivo</h3>
+                    <p>Adapta materiais existentes para alunos com TEA, TDAH e outras necessidades especiais.</p>
+                    <div class="workflow-agents">
+                        <span>♿ Especialista</span>
+                        <span>→</span>
+                        <span>✍️ Criador</span>
+                        <span>→</span>
+                        <span>📊 Avaliador</span>
+                    </div>
+                    <code class="workflow-cmd">/adaptar-material-inclusivo</code>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section class="section" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Arquitetura</span>
+                <h2 class="section-title">Como Funciona?</h2>
+                <p class="section-subtitle">Um fluxo inteligente que conecta demanda, agentes e skills.</p>
+            </div>
+            <div class="flow-container">
+                <div class="flow-step">
+                    <div class="flow-number">1</div>
+                    <h3>Demanda</h3>
+                    <p>O aluno ou professor faz uma solicitação ao sistema.</p>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="flow-number">2</div>
+                    <h3>Delegação</h3>
+                    <p>O Orquestrador analisa e aciona o agente mais adequado.</p>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="flow-number">3</div>
+                    <h3>Equipar Skills</h3>
+                    <p>O agente carrega as skills necessárias para a tarefa.</p>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="flow-number">4</div>
+                    <h3>Execução</h3>
+                    <p>O agente interage com o usuário, adaptando-se ao contexto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Governance Section -->
+    <section class="section section-dark" id="governance">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Regras Inegociáveis</span>
+                <h2 class="section-title">Governança Educacional</h2>
+                <p class="section-subtitle">Princípios que TODOS os agentes devem seguir, sem exceção.</p>
+            </div>
+            <div class="governance-grid">
+                <div class="governance-card">
+                    <div class="governance-icon">🚫</div>
+                    <h3>Sem Respostas Prontas</h3>
+                    <p>Nunca fornecer gabaritos ou soluções diretas. O agente <strong>media</strong> o aprendizado.</p>
+                </div>
+                <div class="governance-card">
+                    <div class="governance-icon">💪</div>
+                    <h3>Reforço Positivo</h3>
+                    <p>Reconhecer o esforço, não apenas o acerto. Growth Mindset obrigatório.</p>
+                </div>
+                <div class="governance-card">
+                    <div class="governance-icon">✅</div>
+                    <h3>Quality Gate</h3>
+                    <p>Todo material passa por verificação pedagógica automatizada antes da entrega.</p>
+                </div>
+                <div class="governance-card">
+                    <div class="governance-icon">♿</div>
+                    <h3>Inclusão Integral</h3>
+                    <p>Adaptações de acessibilidade têm peso normativo e não podem ser revertidas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section section-cta">
+        <div class="container">
+            <h2 class="cta-title">Pronto para revolucionar a educação com IA?</h2>
+            <p class="cta-subtitle">Contribua com novas skills, agentes ou workflows. O projeto é open source.</p>
+            <div class="cta-actions">
+                <a href="https://github.com/namerico/antigravity-education-kit" target="_blank" class="btn btn-primary btn-lg">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    Acessar Repositório
+                </a>
+                <a href="https://github.com/namerico/antigravity-education-kit/blob/main/CONTRIBUTING.md" target="_blank" class="btn btn-outline btn-lg">
+                    Como Contribuir
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">🚀</span>
+                    <span class="logo-text">Antigravity<span class="logo-accent">Edu</span></span>
+                    <p>Framework de IA modular para educação.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegação</h4>
+                    <a href="#about">Sobre</a>
+                    <a href="#agents">Agentes</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#workflows">Workflows</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Recursos</h4>
+                    <a href="https://github.com/namerico/antigravity-education-kit" target="_blank">GitHub</a>
+                    <a href="https://github.com/namerico/antigravity-education-kit/blob/main/CONTRIBUTING.md" target="_blank">Contribuir</a>
+                    <a href="https://scholar.google.com/?hl=pt-BR" target="_blank">Google Acadêmico</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Antigravity Education Kit. Open Source sob licença MIT.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
